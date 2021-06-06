@@ -98,7 +98,7 @@ const animation = new Audio("https://docs.google.com/uc?export=open&id=1GUcBoFb-
 animation.loop = true;
 
 window.onclick = function() {
-	if (Math.random() < 0.01) {
+	if (Math.random() < 0.00) {
 		animation.play();
 		setTimeout(function() {
 			animation.pause();
