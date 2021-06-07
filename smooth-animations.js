@@ -94,7 +94,8 @@ Element.prototype.animation = function(animationMove, accs, direction) {
   }
 }
 
-const animation = new Audio("https://docs.google.com/uc?export=open&id=1GUcBoFb-JnRTrsZD3z6wFsAHAZQfINHC");
+const animationType = Math.random() > 0.5 ? "https://docs.google.com/uc?export=open&id=1ZIwgUKEP0ISjnYmjfQ6xXqInZJa09OeA" : "https://docs.google.com/uc?export=open&id=1GUcBoFb-JnRTrsZD3z6wFsAHAZQfINHC";
+const animation = new Audio(animationType)
 animation.loop = true;
 
 window.onclick = function() {
