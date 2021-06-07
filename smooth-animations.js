@@ -99,9 +99,9 @@ const atla = "https://docs.google.com/uc?export=open&id=1ZIwgUKEP0ISjnYmjfQ6xXqI
 const animationType = Math.random() < 0.1 ? "https://docs.google.com/uc?export=open&id=1ZIwgUKEP0ISjnYmjfQ6xXqInZJa09OeA" : "https://docs.google.com/uc?export=open&id=1GUcBoFb-JnRTrsZD3z6wFsAHAZQfINHC";
 const animation = new Audio(animationType);
 animation.loop = true;
-
+// VIBE CHECK
 window.onclick = function() {
-	if (Math.random() < 0.2) {
+	if (Math.random() < 0.02) {
 		animation.play();
 		setTimeout(function() {
 			animation.pause();
