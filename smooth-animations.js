@@ -101,7 +101,7 @@ const animation = new Audio(animationType);
 animation.loop = true;
 // VIBE CHECK
 window.onclick = function() {
-	if (Math.random() < 0.02) {
+	if (false && Math.random() < 0.00) {
 		animation.play();
 		setTimeout(function() {
 			animation.pause();
