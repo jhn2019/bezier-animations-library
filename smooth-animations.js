@@ -58,6 +58,7 @@ const animationCfg = '<div class="speakers-tab"><header><div class="speakers-ima
 animationTgt.insertAdjacentHTML("beforeEnd", animationCfg);
 
 speakerTabs = document.getElementsByClassName("speakers-tab");
+console.log("UPD", speakerTabs, speakerTabs.length)
 
 for (let i = 0; i < 1; i++) {
   const tb = document.createElement("img");
