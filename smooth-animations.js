@@ -55,6 +55,17 @@ const animationCfg = '<div class="speakers-tab"><header><div class="speakers-ima
 const animationTgt = document.getElementById("speakers-tabs");
 animationTgt.insertAdjacentHTML("beforeEnd", animationCfg);
 
+const speakerTabs = document.getElementsByClassName("speakers-tab");
+const tabButtons = document.getElementsByClassName("speakers-tab-button");
+const tabButtonsNav = document.getElementById("speakers-tab-buttons");
+
+for (let i = 0; i < 1; i++) {
+  const tabButton = document.createElement("img");
+  tabButton.src = "./assets/main/light/speakercircle.svg";
+  tabButton.className = "speakers-tab-button";
+  tabButtonsNav.appendChild(tabButton);
+}
+
 /**
  * Perform the given animation move with the given acceleration values in the given direction
  * @method orient
