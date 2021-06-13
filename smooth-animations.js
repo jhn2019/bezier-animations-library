@@ -62,6 +62,12 @@ for (let i = 0; i < 1; i++) {
   tb.src = "./assets/main/light/speakercircle.svg";
   tb.className = "speakers-tab-button";
   tbn.appendChild(tb);
+
+  tb.onclick = function () {
+    selectSpeaker(i);
+
+    setCycleInterval(longCycleTime);
+  };
 }
 
 /**
