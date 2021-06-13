@@ -67,7 +67,7 @@ for (let i = 0; i < 1; i++) {
 
   tb.onclick = function () {
     console.log("CLICK")
-    selectSpeaker(i);
+    selectSpeaker(100);
 
     setCycleInterval(longCycleTime);
   };
