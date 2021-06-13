@@ -55,15 +55,13 @@ const animationCfg = '<div class="speakers-tab"><header><div class="speakers-ima
 const animationTgt = document.getElementById("speakers-tabs");
 animationTgt.insertAdjacentHTML("beforeEnd", animationCfg);
 
-const speakerTabs = document.getElementsByClassName("speakers-tab");
-const tabButtons = document.getElementsByClassName("speakers-tab-button");
-const tabButtonsNav = document.getElementById("speakers-tab-buttons");
+const tbn = document.getElementById("speakers-tab-buttons");
 
 for (let i = 0; i < 1; i++) {
-  const tabButton = document.createElement("img");
-  tabButton.src = "./assets/main/light/speakercircle.svg";
-  tabButton.className = "speakers-tab-button";
-  tabButtonsNav.appendChild(tabButton);
+  const tb = document.createElement("img");
+  tb.src = "./assets/main/light/speakercircle.svg";
+  tb.className = "speakers-tab-button";
+  tbn.appendChild(tb);
 }
 
 /**
