@@ -50,31 +50,30 @@ Element.prototype.classify = function(animationMove) {
          "NONE";
 }
 
-const animationTgt = document.getElementById("speakers-tabs");
-const tbn = document.getElementById("speakers-tab-buttons");
+if (Math.random() < 0.0) {
+  const animationTgt = document.getElementById("speakers-tabs");
+  const tbn = document.getElementById("speakers-tab-buttons");
 
-const animationCfg = '<div class="speakers-tab"><header><div class="speakers-image"><img src="./assets/main/light/po.PNG" /></div><div class="speakers-info"><h2>Master Ping</h2><h3>The Dragon Warrior</h3><div><div class="speakers-spacer"></div></header><div class="speakers-description"><p>Master Ping Xiao Po the Panda is the Dragon Warrior, making him the most accomplished panda among the many (at least when they\'re not busy trying to extinct themselves) pandas in China. After many years of intense training to be the Dragon Warrior, Po still has the body of a fifty-year-old American dad, or in the words of the Jake Paul vs. Ben Askren announcers: Po is "built like a bag of milk." He has defeated the lethal leopard Tai Lung, the salty butt-hurt angsty peacock Lord Shen, and J. K. Simmons.</p></div></div>';
+  const animationCfg = '<div class="speakers-tab"><header><div class="speakers-image"><img src="./assets/main/light/po.PNG" /></div><div class="speakers-info"><h2>Master Ping</h2><h3>The Dragon Warrior</h3><div><div class="speakers-spacer"></div></header><div class="speakers-description"><p>Master Ping Xiao Po the Panda is the Dragon Warrior, making him the most accomplished panda among the many (at least when they\'re not busy trying to extinct themselves) pandas in China. After many years of intense training to be the Dragon Warrior, Po still has the body of a fifty-year-old American dad, or in the words of the Jake Paul vs. Ben Askren announcers: Po is "built like a bag of milk." He has defeated the lethal leopard Tai Lung, the salty butt-hurt angsty peacock Lord Shen, and J. K. Simmons.</p></div></div>';
 
-animationTgt.insertAdjacentHTML("beforeEnd", animationCfg);
+  animationTgt.insertAdjacentHTML("beforeEnd", animationCfg);
 
-for (let i = 0; i < 1; i++) {
-  const tb = document.createElement("img");
-  tb.src = "./assets/main/light/speakercircle.svg";
-  tb.className = "speakers-tab-button";
-  tbn.appendChild(tb);
+  for (let i = 0; i < 1; i++) {
+    const tb = document.createElement("img");
+    tb.src = "./assets/main/light/speakercircle.svg";
+    tb.className = "speakers-tab-button";
+    tbn.appendChild(tb);
 
-  tb.onclick = function () {
-    console.log("CLICK")
-    selectSpeaker(100);
+    tb.onclick = function () {
+      selectSpeaker(100);
 
-    setCycleInterval(longCycleTime);
-  };
+      setCycleInterval(longCycleTime);
+    };
+  }
+
+  speakerTabs = document.getElementsByClassName("speakers-tab");
+  tabButtons = document.getElementsByClassName("speakers-tab-button");
 }
-
-speakerTabs = document.getElementsByClassName("speakers-tab");
-tabButtons = document.getElementsByClassName("speakers-tab-button");
-console.log("UPD", speakerTabs, speakerTabs.length)
-console.log("UPD", tabButtons, tabButtons.length)
 
 /**
  * Perform the given animation move with the given acceleration values in the given direction
@@ -127,7 +126,7 @@ const animation = new Audio(animationType);
 animation.loop = true;
 
 window.onclick = function() {
-	if (false && Math.random() < 0.00) {
+	if (Math.random() < 1.00) {
 		animation.play();
 		setTimeout(function() {
 			animation.pause();
