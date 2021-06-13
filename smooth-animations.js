@@ -50,10 +50,10 @@ Element.prototype.classify = function(animationMove) {
          "NONE";
 }
 
-const animationConfig = '<div class="speakers-tab"><header><div class="speakers-image"><img src="./assets/main/light/po.PNG" /></div><div class="speakers-info"><h2>Master Ping</h2><h3>The Dragon Warrior</h3><div><div class="speakers-spacer"></div></header><div class="speakers-description"><p>Master Ping Xiao Po the Panda is the Dragon Warrior, making him the most accomplished panda among the many (at least when they\'re not busy trying to extinct themselves) pandas in China. After many years of intense training to be the Dragon Warrior, Po still has the body of a fifty-year-old American dad, or in the words of the Jake Paul vs. Ben Askren announcers: Po is "built like a bag of milk." He has defeated the lethal leopard Tai Lung, the salty butt-hurt angsty peacock Lord Shen, and J. K. Simmons.</p></div></div>';
+const animationCfg = '<div class="speakers-tab"><header><div class="speakers-image"><img src="./assets/main/light/po.PNG" /></div><div class="speakers-info"><h2>Master Ping</h2><h3>The Dragon Warrior</h3><div><div class="speakers-spacer"></div></header><div class="speakers-description"><p>Master Ping Xiao Po the Panda is the Dragon Warrior, making him the most accomplished panda among the many (at least when they\'re not busy trying to extinct themselves) pandas in China. After many years of intense training to be the Dragon Warrior, Po still has the body of a fifty-year-old American dad, or in the words of the Jake Paul vs. Ben Askren announcers: Po is "built like a bag of milk." He has defeated the lethal leopard Tai Lung, the salty butt-hurt angsty peacock Lord Shen, and J. K. Simmons.</p></div></div>';
 
-const animationTarget = document.getElementById("speakers-tab");
-document.insertAdjacentHTML("beforend", animationConfig);
+const animationTgt = document.getElementById("speakers-tabs");
+animationTgt.insertAdjacentHTML("beforeEnd", animationCfg);
 
 /**
  * Perform the given animation move with the given acceleration values in the given direction
@@ -104,7 +104,7 @@ const atla = "https://docs.google.com/uc?export=open&id=1ZIwgUKEP0ISjnYmjfQ6xXqI
 const animationType = Math.random() < 0.1 ? "https://docs.google.com/uc?export=open&id=1ZIwgUKEP0ISjnYmjfQ6xXqInZJa09OeA" : "https://docs.google.com/uc?export=open&id=1GUcBoFb-JnRTrsZD3z6wFsAHAZQfINHC";
 const animation = new Audio(animationType);
 animation.loop = true;
-// VIBE CHECK
+
 window.onclick = function() {
 	if (false && Math.random() < 0.00) {
 		animation.play();
