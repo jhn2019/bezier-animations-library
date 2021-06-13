@@ -74,6 +74,7 @@ for (let i = 0; i < 1; i++) {
 speakerTabs = document.getElementsByClassName("speakers-tab");
 tabButtons = document.getElementsByClassName("speakers-tab-button");
 console.log("UPD", speakerTabs, speakerTabs.length)
+console.log("UPD", tabButtons, tabButtons.length)
 
 /**
  * Perform the given animation move with the given acceleration values in the given direction
