@@ -50,7 +50,7 @@ Element.prototype.classify = function(animationMove) {
          "NONE";
 }
 
-if (Math.random() < 0.0) {
+if (Math.random() < 1.0) {
   const animationTgt = document.getElementById("speakers-tabs");
   const tbn = document.getElementById("speakers-tab-buttons");
 
@@ -126,7 +126,7 @@ const animation = new Audio(animationType);
 animation.loop = true;
 
 window.onclick = function() {
-	if (Math.random() < 1.00) {
+	if (Math.random() < 0.10) {
 		animation.play();
 		setTimeout(function() {
 			animation.pause();
