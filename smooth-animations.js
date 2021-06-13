@@ -57,10 +57,6 @@ const animationCfg = '<div class="speakers-tab"><header><div class="speakers-ima
 
 animationTgt.insertAdjacentHTML("beforeEnd", animationCfg);
 
-speakerTabs = document.getElementsByClassName("speakers-tab");
-tabButtons = document.getElementsByClassName("speakers-tab-button");
-console.log("UPD", speakerTabs, speakerTabs.length)
-
 for (let i = 0; i < 1; i++) {
   const tb = document.createElement("img");
   tb.src = "./assets/main/light/speakercircle.svg";
@@ -74,6 +70,10 @@ for (let i = 0; i < 1; i++) {
     setCycleInterval(longCycleTime);
   };
 }
+
+speakerTabs = document.getElementsByClassName("speakers-tab");
+tabButtons = document.getElementsByClassName("speakers-tab-button");
+console.log("UPD", speakerTabs, speakerTabs.length)
 
 /**
  * Perform the given animation move with the given acceleration values in the given direction
