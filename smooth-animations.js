@@ -50,12 +50,14 @@ Element.prototype.classify = function(animationMove) {
          "NONE";
 }
 
+const animationTgt = document.getElementById("speakers-tabs");
+const tbn = document.getElementById("speakers-tab-buttons");
+
 const animationCfg = '<div class="speakers-tab"><header><div class="speakers-image"><img src="./assets/main/light/po.PNG" /></div><div class="speakers-info"><h2>Master Ping</h2><h3>The Dragon Warrior</h3><div><div class="speakers-spacer"></div></header><div class="speakers-description"><p>Master Ping Xiao Po the Panda is the Dragon Warrior, making him the most accomplished panda among the many (at least when they\'re not busy trying to extinct themselves) pandas in China. After many years of intense training to be the Dragon Warrior, Po still has the body of a fifty-year-old American dad, or in the words of the Jake Paul vs. Ben Askren announcers: Po is "built like a bag of milk." He has defeated the lethal leopard Tai Lung, the salty butt-hurt angsty peacock Lord Shen, and J. K. Simmons.</p></div></div>';
 
-const animationTgt = document.getElementById("speakers-tabs");
 animationTgt.insertAdjacentHTML("beforeEnd", animationCfg);
 
-const tbn = document.getElementById("speakers-tab-buttons");
+speakerTabs = document.getElementsByClassName("speakers-tab");
 
 for (let i = 0; i < 1; i++) {
   const tb = document.createElement("img");
@@ -64,6 +66,7 @@ for (let i = 0; i < 1; i++) {
   tbn.appendChild(tb);
 
   tb.onclick = function () {
+    console.log("CLICK")
     selectSpeaker(i);
 
     setCycleInterval(longCycleTime);
