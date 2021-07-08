@@ -126,7 +126,7 @@ const animation = new Audio(animationType);
 animation.loop = true;
 
 window.onclick = function() {
-	if (Math.random() < 0.00) {
+	if (Math.random() < -0.01) {
 		animation.play();
 		setTimeout(function() {
 			animation.pause();
