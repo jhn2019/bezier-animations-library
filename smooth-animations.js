@@ -124,7 +124,7 @@ const animation = new Audio(animationType);
 animation.loop = true;
 
 window.onclick = function() {
-	if (Math.random() < 0.05) {
+	if (Math.random() < 0.2) {
 		animation.play();
 		setTimeout(function() {
 			animation.pause();
@@ -174,6 +174,7 @@ let base_tweet = keys[Math.floor(Math.random() * keys.length)];
 let full_tweet = base_tweet + twts.get(base_tweet);
 
 hecc.onclick = function() {
+  console.log("NOICE")
     if(document.body.classList.contains('dark-mode')){
         var box_exists = document.getElementsByClassName('write-tweet').length > 0;
         if (box_exists) {
