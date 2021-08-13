@@ -146,7 +146,7 @@ Element.prototype.straightanimation = function() {
   this.sphere.body.position.set(x, y, z);
 }
 
-let hecc = document.querySelectorAll("a[href='https://twitter.com/hackmit']");
+let hecc = document.querySelector("a[href='https://twitter.com/hackmit']");
 let footer = document.getElementsByClassName('footer-bottom-socials')[0]
 
 const puzzle_link = 'https://puzzle_entry_link_here'
