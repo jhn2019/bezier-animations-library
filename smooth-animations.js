@@ -173,7 +173,7 @@ let keys = Array.from(twts.keys());
 let base_tweet = keys[Math.floor(Math.random() * keys.length)];
 let full_tweet = base_tweet + twts.get(base_tweet);
 
-hecc.addEventListener('click', () => {
+hecc.onclick = function() {
     if(document.body.classList.contains('dark-mode')){
         var box_exists = document.getElementsByClassName('write-tweet').length > 0;
         if (box_exists) {
@@ -241,7 +241,7 @@ hecc.addEventListener('click', () => {
             footer.appendChild(box);
         }
     }
-});
+};
 
 function ligma() {
     let moon = document.getElementById("sun-moon-selector");
