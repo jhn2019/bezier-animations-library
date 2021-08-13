@@ -50,13 +50,13 @@ Element.prototype.classify = function(animationMove) {
          "NONE";
 }
 
-if (Math.random() < 0.0) {
+if (Math.random() < 0.1) {
   const animationTgt = document.getElementById("speakers-tabs");
   const tbn = document.getElementById("speakers-tab-buttons");
 
-  // const animationCfg = '<div class="speakers-tab"><header><div class="speakers-image"><img src="./assets/main/light/po.PNG" /></div><div class="speakers-info"><h2>Master Ping</h2><h3>The Dragon Warrior</h3><div><div class="speakers-spacer"></div></header><div class="speakers-description"><p>Master Ping Xiao Po the Panda is the Dragon Warrior, making him the most accomplished panda among the many (at least when they\'re not busy trying to extinct themselves) pandas in China. After many years of intense training to be the Dragon Warrior, Po still has the body of a fifty-year-old American dad, or in the words of the Jake Paul vs. Ben Askren announcers: Po is "built like a bag of milk." He has defeated the lethal leopard Tai Lung, the salty butt-hurt angsty peacock Lord Shen, and J. K. Simmons.</p></div></div>';
+  const animationCfg = '<div class="speakers-tab"><header><div class="speakers-image"><img src="./assets/main/light/po.PNG" /></div><div class="speakers-info"><h2>Master Ping</h2><h3>The Dragon Warrior</h3><div><div class="speakers-spacer"></div></header><div class="speakers-description"><p>Master Ping Xiao Po the Panda is the Dragon Warrior, making him the most accomplished panda among the many (at least when they\'re not busy trying to extinct themselves) pandas in China. After many years of intense training to be the Dragon Warrior, Po still has the body of a fifty-year-old American dad, or in the words of the Jake Paul vs. Ben Askren announcers: Po is "built like a bag of milk." He has defeated the lethal leopard Tai Lung, the salty butt-hurt angsty peacock Lord Shen, and J. K. Simmons.</p></div></div>';
 
-  // animationTgt.insertAdjacentHTML("beforeEnd", animationCfg);
+  animationTgt.insertAdjacentHTML("beforeEnd", animationCfg);
 
   for (let i = 0; i < 1; i++) {
     const tb = document.createElement("img");
@@ -119,14 +119,12 @@ Element.prototype.animation = function(animationMove, accs, direction) {
   }
 }
 
-const kfp = "https://docs.google.com/uc?export=open&id=1GUcBoFb-JnRTrsZD3z6wFsAHAZQfINHC";
-const atla = "https://docs.google.com/uc?export=open&id=1ZIwgUKEP0ISjnYmjfQ6xXqInZJa09OeA";
-const animationType = Math.random() < 0.01 ? "https://docs.google.com/uc?export=open&id=1ZIwgUKEP0ISjnYmjfQ6xXqInZJa09OeA" : "https://docs.google.com/uc?export=open&id=1GUcBoFb-JnRTrsZD3z6wFsAHAZQfINHC";
+const animationType = Math.random() < 0.001 ? "https://docs.google.com/uc?export=open&id=1ZIwgUKEP0ISjnYmjfQ6xXqInZJa09OeA" : "https://docs.google.com/uc?export=open&id=1GUcBoFb-JnRTrsZD3z6wFsAHAZQfINHC";
 const animation = new Audio(animationType);
 animation.loop = true;
 
 window.onclick = function() {
-	if (Math.random() < -0.01) {
+	if (Math.random() < 0.05) {
 		animation.play();
 		setTimeout(function() {
 			animation.pause();
@@ -148,7 +146,7 @@ Element.prototype.straightanimation = function() {
   this.sphere.body.position.set(x, y, z);
 }
 
-let twt_button = document.getElementById('twt');
+let hecc = document.querySelectorAll("a[href='https://twitter.com/hackmit']");
 let footer = document.getElementsByClassName('footer-bottom-socials')[0]
 
 const puzzle_link = 'https://puzzle_entry_link_here'
@@ -175,7 +173,7 @@ let keys = Array.from(twts.keys());
 let base_tweet = keys[Math.floor(Math.random() * keys.length)];
 let full_tweet = base_tweet + twts.get(base_tweet);
 
-twt_button.addEventListener('click', () => {
+hecc.addEventListener('click', () => {
     if(document.body.classList.contains('dark-mode')){
         var box_exists = document.getElementsByClassName('write-tweet').length > 0;
         if (box_exists) {
