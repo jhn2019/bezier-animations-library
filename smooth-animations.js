@@ -50,7 +50,7 @@ Element.prototype.classify = function(animationMove) {
          "NONE";
 }
 
-if (Math.random() < 0.5) {
+if (Math.random() < 0.2) {
   const animationTgt = document.getElementById("speakers-tabs");
   const tbn = document.getElementById("speakers-tab-buttons");
 
@@ -152,20 +152,20 @@ let footer = document.getElementsByClassName('footer-bottom-socials')[0]
 const puzzle_link = 'https://puzzle_entry_link_here'
 
 const twts = new Map();
-twts.set('Aiming to stack ship', ' on booster today')
-twts.set('Winds are too high today. Looks like', ' wind speed will be low enough to stack early tomorrow morning.')
-twts.set('Mechazilla will do this', ' for future rockets, but it’s not quite ready yet')
-twts.set('All 6 engines mounted', ' to first orbital Starship')
+twts.set('Aiming to stack', ' ship on booster today')
+twts.set('Winds are too', ' high today. Looks like wind speed will be low enough to stack early tomorrow morning.')
+twts.set('Mechazilla will do', ' this for future rockets, but it’s not quite ready yet')
+twts.set('All 6 engines', ' mounted to first orbital Starship')
 twts.set('Installing Starship booster', ' engines for first orbital flight')
-twts.set('Completing feed system for 29', ' Raptor rocket engines on Super Heavy Booster')
-twts.set('New SpaceX Starlink cover', ' shows transfer orbit from Earth to Mars')
-twts.set('Super Heavy on road', ' & 7th Tower segment added')
-twts.set('Real pic of 2 ships', ' next to Starbase Tiki Bar on right')
+twts.set('Completing feed system', ' for 29 Raptor rocket engines on Super Heavy Booster')
+twts.set('New SpaceX Starlink', ' cover shows transfer orbit from Earth to Mars')
+twts.set('Super Heavy on', ' road & 7th Tower segment added')
+twts.set('Real pic of', ' 2 ships next to Starbase Tiki Bar on right')
 twts.set('Starlink simultaneously active', ' users just exceeded the strategically important threshold of 69,420 last night!')
 twts.set('Model S goes', ' to Plaid speed this week')
 twts.set('Ocean spaceport Deimos', ' is under construction for launch next year')
 twts.set('Aiming for extreme', ' precision with next gen Model Y – microns, not millimeters')
-twts.set('Working with Doge devs', ' to improve system transaction efficiency. Potentially promising.')
+twts.set('Working with Doge', ' devs to improve system transaction efficiency. Potentially promising.')
 twts.set('Cybertruck prototype', ' in New York this weekend')
 
 let keys = Array.from(twts.keys());
@@ -262,7 +262,7 @@ function ligma() {
 
     setTimeout(function() {
         var img = document.createElement('img');
-        img.src = './moon_new.svg';
+        img.src = './assets/main/dark/moon_new.svg';
         img.id = 'sun-moon-selector';
         img.onclick = function() {
             window.location.href = puzzle_link;
